@@ -40,19 +40,19 @@
     arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
     <a-assets>
-      <a-asset-item id="fog" src="assets/fog_block_3.glb"></a-asset-item>
+      <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item>
     </a-assets>
 
     <a-nft
       type='nft'
-      url='https://cthompto.github.io/transcode_gallery/trackers/trax'
+      url='./trackers/trax'
       smooth='true'
       smoothCount='10'
       smoothTolerance='0.01'
       smoothThreshold='5'>
       <a-entity gltf-model="#fog"
                 scale="3 3 3"
-                position="-100 200 100"
+                position="0 5 0"
                 rotation="0 0 0"
                 animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity>
     </a-nft>

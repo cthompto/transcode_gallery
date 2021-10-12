@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- include A-Frame obviously -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- include ar.js for A-Frame -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+</head>
+
+<body>
+  <a-scene background="color: #FFFF00">
+    <a-assets>
+      <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item>
+    </a-assets>
+    <a-entity gltf-model="#fog"
+              scale="0.01 0.01 0.01"
+              position="0 1 -2"
+              rotation="0 0 0"
+              animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity>
+  </a-scene>
+</body>
+
+</html>

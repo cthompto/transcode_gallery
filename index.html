@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- include A-Frame obviously -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!-- include ar.js for A-Frame -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <style>
+    .arjs-loader {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .arjs-loader div {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+    }
+  </style>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <!-- minimal loader shown until image descriptors are loaded -->
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+  <a-scene
+    vr-mode-ui='enabled: false;'
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+    <a-assets>
+      <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item>
+    </a-assets>
+
+    <a-nft
+      type='nft'
+      url='./trackers/trax'
+      smooth='true'
+      smoothCount='10'
+      smoothTolerance='0.01'
+      smoothThreshold='5'>
+      <a-entity gltf-model="#fog"
+                scale="3 3 3"
+                position="-200 400 20"
+                rotation="0 0 0"
+                animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity>
+    </a-nft>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>

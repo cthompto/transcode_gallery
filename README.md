@@ -1,5 +1,6 @@
-# transcode_gallery
+# Transcode Gallery
 ## Experimental AR Body Gallery
+## 2021 - Chelsea Thompto
 
 **This project is in very early stages and is a work in progress.**
 

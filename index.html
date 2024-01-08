@@ -41,6 +41,7 @@
 
     <a-assets>
       <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item>
+      <video id="ld-vid" autoplay loop="true" src="./assets/LD-Draft-1.mp4"></video>
     </a-assets>
 
     <a-nft
@@ -52,7 +53,8 @@
       smoothTolerance=".01"
       smoothThreshold="5"
       size="0.1">
-      <a-entity gltf-model="#fog"
+      <a-video  src="#ld-vid" width="16" height="9" position="0 0 0"></a-video>
+      <!-- <a-entity gltf-model="#fog"
                 scale="3 3 3"
                 position="800 2400 -300"
                 rotation="0 0 0"
@@ -81,7 +83,8 @@
                 scale="1 1 1"
                 position="50 100 -250"
                 rotation="0 0 0"
-                animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity>
+                animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity> -->
+      
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>

@@ -23,12 +23,12 @@ AFRAME.registerComponent('vidhandler', {
       this.vid.pause();
   },
   tick:function(){
-     if(markerFound){
+     if(this.nftmarkerFound){
        if(!this.toggle){
          this.toggle = true;
          this.vid.play();
       }
-    }else if(markerLost){
+    }else if(this.nftmarkerLost){
       this.toggle = false;
       this.vid.pause();
     }

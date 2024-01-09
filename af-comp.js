@@ -20,15 +20,15 @@ AFRAME.registerComponent('vidhandler', {
     init: function () {
       this.toggle = false;
       this.vid = document.querySelector("#ld-vid")
-      this.vid.pause()
+      this.vid.pause();
   },
   tick:function(){
-     if(this.vid.visible == true){
+     if(markerFound){
        if(!this.toggle){
          this.toggle = true;
          this.vid.play();
       }
-    }else{
+    }else if(markerLost){
       this.toggle = false;
       this.vid.pause();
     }

@@ -34,7 +34,7 @@
        height: 100vh;
        width: 100vw;
        z-index: 99;
-       background: rgba(0, 0, 0, 0.7);
+       background: rgba(0, 0, 0, 0.8);
        flex-direction: column;
        justify-content: center;
        align-items: center;
@@ -43,15 +43,16 @@
        display: flex;
        opacity: 1;
        transition: opacity 0.25s ease;
-       color: antiquewhite;
+       color: white;
        font-family: 'Courier New', Courier, monospace;
+       font-size: larger;
       }
 
       .modal {
-        margin:auto;
+        margin: auto;
         border-style: solid;
         border-width: 2px;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
         z-index: 11;
         
@@ -62,6 +63,8 @@
 <body style='margin : 0px; overflow: hidden;'>
   <div class="overlay" id="overlay" onclick="off()" >
     <div class="modal">
+      <img src="./assets/transcode-banner-2.png">
+      <br><br>
       <p>Transcode Gallery presents:</p>
       <p>Lorelei d'Andriole</p>
     </div>

@@ -80,7 +80,7 @@
 
     <a-assets>
       <!-- <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item> -->
-      <video id="ld-vid" loop="true" src="./assets/LD-Draft-1.mp4"></video>
+      <video id="ld-vid" loop="true" src="./assets/LD-Draft-1.mp4" crossorigin></video>
     </a-assets>
 
     <a-nft
@@ -91,7 +91,8 @@
       smoothCount="10"
       smoothTolerance=".01"
       smoothThreshold="5"
-      size="0.1">
+      size="0.1"
+      vidhandler>
       <a-video  src="#ld-vid" 
                 width="240" 
                 height="135" 

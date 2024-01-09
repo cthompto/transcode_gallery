@@ -6,7 +6,7 @@
   <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
   <!-- include ar.js for A-Frame -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-  <script src="./inst-ov.js"></script>
+  <script src="./af-comp.js"></script>
   <style>
     .arjs-loader {
       height: 100%;
@@ -49,8 +49,8 @@
         position: fixed;
         top: 55%;
         left: 50%;
-        margin-top: -200px;
-        margin-left: -350px;
+        /* margin-top: -200px;
+        margin-left: -350px; */
         border-style: dashed;
         border-width: 2px;
         padding: 10px;
@@ -69,9 +69,9 @@
     </div>
   </div>
   <!-- minimal loader shown until image descriptors are loaded -->
-  <div class="arjs-loader">
+  <!-- <div class="arjs-loader">
     <div>Loading, please wait...</div>
-  </div>
+  </div> -->
   <a-scene
     vr-mode-ui='enabled: false;'
     renderer="logarithmicDepthBuffer: true;"
@@ -80,7 +80,7 @@
 
     <a-assets>
       <!-- <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item> -->
-      <video id="ld-vid" autoplay loop="true" src="./assets/LD-Draft-1.mp4"></video>
+      <video id="ld-vid" loop="true" src="./assets/LD-Draft-1.mp4"></video>
     </a-assets>
 
     <a-nft
@@ -97,43 +97,7 @@
                 height="135" 
                 position="25 0 -175"
                 rotation="-90 0 0"></a-video>
-      <!-- <a-entity gltf-model="#fog"
-                scale="3 3 3"
-                position="800 2400 -300"
-                rotation="0 0 0"
-                animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity>
-      <a-entity gltf-model="#fog"
-                scale="3 3 3"
-                position="400 150 -250"
-                rotation="0 0 0"
-                animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity> -->
-      <!-- <a-box    color="white"
-                position="100 100 -550"
-                scale="50 50 50"></a-box>
-      <a-box    color="magenta"
-                position="700 100 -550"
-                scale="50 50 50"></a-box>
-      <a-box    color="yellow"
-                position="100 100 50"
-                scale="50 50 50"></a-box>
-      <a-box    color="cyan"
-                position="700 100 50"
-                scale="50 50 50"></a-box>
-      <a-sphere color="green"
-                position="0 50 0"
-                radius="50"></a-sphere> -->
-      <!-- <a-entity gltf-model="#fog"
-                scale="1 1 1"
-                position="50 100 -250"
-                rotation="0 0 0"
-                animation="property: rotation; to: 0 360; easing: linear; loop: true; dur: 10000"></a-entity> -->
-      
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
-   <!-- smooth='true'
-      smoothCount='20'
-      smoothTolerance='50'
-      smoothThreshold='300' -->
-
 </body>

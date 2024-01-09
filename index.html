@@ -34,7 +34,7 @@
        height: 100vh;
        width: 100vw;
        z-index: 99;
-       background: rgba(255, 255, 255, 0.7);
+       background: rgba(0, 0, 0, 0.7);
        flex-direction: column;
        justify-content: center;
        align-items: center;
@@ -43,15 +43,13 @@
        display: flex;
        opacity: 1;
        transition: opacity 0.25s ease;
+       color: antiquewhite;
+       font-family: 'Courier New', Courier, monospace;
       }
 
       .modal {
-        position: fixed;
-        top: 55%;
-        left: 50%;
-        /* margin-top: -200px;
-        margin-left: -350px; */
-        border-style: dashed;
+        margin:auto;
+        border-style: solid;
         border-width: 2px;
         padding: 10px;
         text-align: center;
@@ -80,7 +78,7 @@
 
     <a-assets>
       <!-- <a-asset-item id="fog" src="./assets/fog_block_3.glb"></a-asset-item> -->
-      <video id="ld-vid" loop="true" autoplay="false" src="./assets/LD-Draft-1.mp4" crossorigin="anonymous"></video>
+      <video id="ld-vid" loop="true" autoplay src="./assets/LD-Draft-1.mp4" crossorigin="anonymous"></video>
     </a-assets>
 
     <a-nft

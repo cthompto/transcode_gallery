@@ -3,7 +3,7 @@
 # Transcode Gallery
 An Augmented Reality Gallery Housed on My Body\
 2024\
-Chelsea Thompto\
+Chelsea Thompto
 
 ![transcode gallery screen capture demo](https://github.com/cthompto/transcode_gallery/blob/main/assets/tcg-demo-md.gif)
 

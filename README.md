@@ -1,13 +1,13 @@
 ![transcode gallery banner](https://github.com/cthompto/transcode_gallery/blob/main/assets/transcode-banner-2.png)
 
 # Transcode Gallery
-## Augmented Reality Gallery Housed on My Body
-## 2024
-## Chelsea Thompto
+An Augmented Reality Gallery Housed on My Body
+2024
+Chelsea Thompto
 
 ![transcode gallery screen capture demo](https://github.com/cthompto/transcode_gallery/blob/main/assets/tcg-demo-md.gif)
 
-### Overview
+## Overview
 
 Using [AR.js](https://github.com/AR-js-org) and [A-Frame](https://aframe.io/) to track a tattoo on my arm and apply artwork over top as a performative and body/site specific yet web-based installation space. 
 

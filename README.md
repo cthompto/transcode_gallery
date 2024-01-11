@@ -5,7 +5,7 @@
 ## 2024
 ## Chelsea Thompto
 
-![]()
+![transcode gallery screen capture demo](https://github.com/cthompto/transcode_gallery/blob/main/assets/tcg-demo-md.gif)
 
 ### Overview
 
@@ -15,4 +15,4 @@ A continuation of the ideas started in my work [A Transmaterial Body](https://ww
 
 The first artist to show at Transcode Gallery is [Lorelei d’Andriole](https://loreleid.art/). She is showing a silent video piece. Screenshot below:
 
-![]()
+![Lorelei d’Andriole "Number 47" screenshot](https://github.com/cthompto/transcode_gallery/blob/main/assets/l-ad-sample.png)
